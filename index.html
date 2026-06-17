@@ -68,33 +68,42 @@ src="https://www.facebook.com/tr?id=4601307470189340&ev=PageView&noscript=1"
 </style><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" /><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><style>
 @media (max-width: 767px) {
 
-  /* === HERO: texto espacado PLANILHA DA FLORICULTURA === */
+  /* === HERO: coluna central sem margem desktop === */
+  .elementor-14534 .elementor-element.elementor-element-4f27bea7 > .elementor-element-populated {
+    margin: 0 !important;
+    padding: 20px 16px !important;
+    --e-column-margin-left: 0px !important;
+    --e-column-margin-right: 0px !important;
+  }
+
+  /* === HERO: texto "PLANILHA DA FLORICULTURA" - esconde versao espacada e usa pseudo === */
   .elementor-element-c41b3ff p {
-    font-size: 0.6rem !important;
-    letter-spacing: 0.15em !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    margin: 0 0 8px !important;
+  }
+  .elementor-element-c41b3ff p::after {
+    content: "PLANILHA DA FLORICULTURA";
+    display: block;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.22em !important;
+    line-height: 1.6 !important;
     text-align: center !important;
-    line-height: 1.8 !important;
-    white-space: normal !important;
+    color: inherit;
+    text-transform: uppercase;
   }
 
   /* === HERO: headline principal === */
-  .elementor-element-7e53b4c p,
-  .elementor-element-7e53b4c strong {
-    font-size: 1.45rem !important;
+  .elementor-element-7e53b4c p {
+    font-size: 1.4rem !important;
     line-height: 1.3 !important;
     text-align: center !important;
   }
 
-  /* === HERO: subtexto bullets === */
+  /* === HERO: subtexto e bullets === */
   .elementor-element-51bc810a p {
     font-size: 0.9rem !important;
     line-height: 1.6 !important;
-  }
-
-  /* === HERO: coluna sem margem excessiva === */
-  .elementor-element-4f27bea7 > .elementor-element-populated {
-    margin: 0 !important;
-    padding: 24px 20px !important;
   }
 
   /* === BOTAO HERO === */
@@ -103,286 +112,30 @@ src="https://www.facebook.com/tr?id=4601307470189340&ev=PageView&noscript=1"
     width: fit-content !important;
     max-width: 88vw !important;
     margin: 20px auto 8px !important;
-    font-size: 0.95rem !important;
-    padding: 16px 24px !important;
+    font-size: 0.9rem !important;
+    padding: 15px 22px !important;
   }
 
-  /* === ELEMENTOR: hero section padding === */
+  /* === ELEMENTOR: padding geral de secoes === */
   .elementor-section {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
-  .elementor-column-gap-default > .elementor-column > .elementor-widget-wrap {
-    padding: 0 !important;
-  }
 
-  /* === PARA QUEM E: grid 2 col -> 1 col === */
+  /* === PARA QUEM E: grid 2col -> 1col === */
   div[style*="grid-template-columns:1fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* === PARA QUEM E: heading menor === */
-  h2[style*="font-size:2.2rem"] {
-    font-size: 1.5rem !important;
-    margin-bottom: 24px !important;
-  }
-
-  /* === PARA QUEM E: cards padding menor === */
-  div[style*="padding:24px 28px"] {
-    padding: 16px 18px !important;
-  }
-
-  /* === PARA QUEM E: wrapper padding === */
-  div[style*="max-width:900px"] {
-    padding: 0 16px !important;
-  }
-
-  /* === TUDO QUE VOCE LEVA: heading === */
-  h2[style*="font-size:2rem"] {
-    font-size: 1.4rem !important;
-    margin-bottom: 20px !important;
-  }
-
-  /* === TUDO QUE VOCE LEVA: container === */
-  div[style*="max-width:720px"] {
-    padding: 0 14px !important;
-  }
-
-  /* === TIMER: boxes menores === */
-  #oferta {
-    padding: 16px 12px !important;
-  }
-  #oferta > div[style*="display:flex"] {
-    gap: 6px !important;
-  }
-  #timer-hours, #timer-minutes, #timer-seconds {
-    font-size: 1.5rem !important;
-  }
-
-  /* === PRECO "Por apenas R$49,90" === */
-  p[style*="font-size:3rem"] {
-    font-size: 2rem !important;
-  }
-
-  /* === BLOCO PRECO: padding menor === */
-  div[style*="padding:40px 28px"] {
-    padding: 28px 16px !important;
-  }
-
-  /* === TABELA: fonte menor === */
-  table td {
-    padding: 10px 6px !important;
-    font-size: 0.9rem !important;
-  }
-
-  /* === IMAGEM MOCKUP === */
-  div[style*="max-width:720px"] img {
-    border-radius: 6px !important;
-  }
+  h2[style*="font-size:2.2rem"] { font-size: 1.5rem !important; margin-bottom: 24px !important; }
+  h2[style*="font-size:2rem"] { font-size: 1.4rem !important; }
+  div[style*="padding:24px 28px"] { padding: 16px 18px !important; }
+  div[style*="max-width:900px"] { padding: 0 16px !important; }
+  div[style*="max-width:720px"] { padding: 0 14px !important; }
+  p[style*="font-size:3rem"] { font-size: 2rem !important; }
+  div[style*="padding:40px 28px"] { padding: 28px 16px !important; }
+  table td { padding: 10px 6px !important; font-size: 0.9rem !important; }
+  #oferta { padding: 16px 12px !important; }
+  #timer-hours, #timer-minutes, #timer-seconds { font-size: 1.5rem !important; }
 }
-</style></head><body class="wp-singular page-template page-template-elementor_canvas page page-id-14534 wp-custom-logo wp-embed-responsive wp-theme-twentytwentyfour elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-14534"><div data-elementor-type="wp-page" data-elementor-id="14534" class="elementor elementor-14534" data-elementor-post-type="page"><section class="elementor-section elementor-top-section elementor-element elementor-element-357fe7f0 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="357fe7f0" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"><div class="elementor-background-overlay"></div><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4f27bea7" data-id="4f27bea7" data-element_type="column" data-e-type="column"><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-ea6443d elementor-widget elementor-widget-html" data-id="ea6443d" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">  </div><div class="elementor-element elementor-element-c41b3ff elementor-widget elementor-widget-text-editor" data-id="c41b3ff" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default"><p>P L A N I L H A &nbsp; D A &nbsp; F L O R I C U L T U R A</p></div><div class="elementor-element elementor-element-7e53b4c elementor-widget elementor-widget-text-editor" data-id="7e53b4c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default"><p>Sua floricultura <strong>vende todo dia.</strong><br />Então por que o <strong>caixa nunca sobra?</strong></p><p style="font-size:0.85em;opacity:0.8;margin-top:12px;">Você não tem problema de cliente. <strong>Você tem problema de preço.</strong><br />E a maioria das floriculturas fecha sem nunca descobrir isso.</p></div><div class="elementor-element elementor-element-51bc810a elementor-widget elementor-widget-text-editor" data-id="51bc810a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default"><p>❌Sem curso de 8 módulos<br />❌Sem mensalidade de software caro<br />❌Sem precisar entender de Excel</p><p>✅Saiba o <strong>preço certo</strong> de cada arranjo em 2 minutos<br />✅Pare de <strong>perder dinheiro</strong> em casamento e coroa<br />✅Tenha <strong>lucro real</strong> no fim do mês — não só movimento</p></div><div class="elementor-element elementor-element-6f4d1f1 elementor-widget__width-inherit elementor-widget elementor-widget-image" data-id="6f4d1f1" data-element_type="widget" data-e-type="widget" data-widget_type="image.default"> <img fetchpriority="high" decoding="async" width="720" height="405" src="images/foto1.png" class="attachment-medium_large size-medium_large wp-image-22189" alt="Planilha da Floricultura" style="max-width:100%;height:auto;" /></div><div class="elementor-element elementor-element-02bc6a1 elementor-widget elementor-widget-heading" data-id="02bc6a1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default"><h2 class="elementor-heading-title elementor-size-default">De <b><s><b style="color:red">R$137</b></s> por apenas <b style="color:#3ED649">R$49,90</b></b></h2></div><style>#btn-hero-cta{display:block !important;width:fit-content !important;max-width:420px !important;margin:24px auto 8px !important;background:#22c55e !important;color:#000 !important;font-size:1.05rem !important;font-weight:900 !important;letter-spacing:0.05em !important;text-transform:uppercase !important;padding:18px 36px !important;border-radius:8px !important;text-decoration:none !important;text-align:center !important;box-shadow:0 4px 16px rgba(34,197,94,0.4) !important;}</style><a id="btn-hero-cta" href="https://pay.kiwify.com.br/M35Uf7r" target="_blank">🌸 QUERO MINHA PLANILHA AGORA</a><div class="elementor-element elementor-element-8170153 elementor-widget elementor-widget-image" data-id="8170153" data-element_type="widget" data-e-type="widget" data-widget_type="image.default"> <img decoding="async" width="697" height="140" src="images/comprasegura.webp" sizes="(max-width: 697px) 100vw, 697px" /></div><div class="elementor-element elementor-element-5b9a393 elementor-widget elementor-widget-html" data-id="5b9a393" data-element_type="widget" data-e-type="widget" data-widget_type="html.default"><div class="elementor-widget-container"> <script defer src="data:text/javascript;base64,DQogICAgY29uc3QgZGVsYXlFbVNlZ3VuZG9zVmFnYXMgPSAxOw0KICAgIGNvbnN0IGRlbGF5RW1TZWd1bmRvc0NvbXByYXMgPSAxOw0KICAgIGNvbnN0IG1hbnRlclZhZ2FzVmlzaXZlaXMgPSBmYWxzZTsNCg0KICAgIGNvbnN0IGNvbXByYXMgPSBbDQogICAgICB7IG5vbWU6ICJKdXNzYXJhIEwuIiwgdGVtcG86ICI0MCBtaW51dG9zIiwgcGFnYW1lbnRvOiAiY2FydMOjbyBkZSBjcsOpZGl0byIgfSwNCiAgICAgIHsgbm9tZTogIkRyYS4gQnJ1bmEgTS4iLCB0ZW1wbzogIjcgbWludXRvcyIsIHBhZ2FtZW50bzogIlBpeCIgfSwNCiAgICAgIHsgbm9tZTogIkFseW5lIEQuIiwgdGVtcG86ICIzMyBtaW51dG9zIiwgcGFnYW1lbnRvOiAiY2FydMOjbyBkZSBkw6liaXRvIiB9LA0KICAgICAgeyBub21lOiAiQWNzYSBTLiIsIHRlbXBvOiAiMjcgbWludXRvcyIsIHBhZ2FtZW50bzogIlBpeCIgfSwNCiAgICAgIHsgbm9tZTogIlTDom5pYSBSLiIsIHRlbXBvOiAiMTkgbWludXRvcyIsIHBhZ2FtZW50bzogImNhcnTDo28gZGUgY3LDqWRpdG8iIH0sDQogICAgICB7IG5vbWU6ICJNYXJsZW5lIEwuIiwgdGVtcG86ICI0NSBtaW51dG9zIiwgcGFnYW1lbnRvOiAiUGl4IiB9LA0KICAgICAgeyBub21lOiAiSXNhYmVsIEkuIiwgdGVtcG86ICIyMSBtaW51dG9zIiwgcGFnYW1lbnRvOiAiY2FydMOjbyBkZSBkw6liaXRvIiB9LA0KICAgICAgeyBub21lOiAiRMOpYm9yYSBOLiIsIHRlbXBvOiAiMzkgbWludXRvcyIsIHBhZ2FtZW50bzogImNhcnTDo28gZGUgY3LDqWRpdG8iIH0sDQogICAgICB7IG5vbWU6ICJWZXLDtG5pY2EgQy4iLCB0ZW1wbzogIjkgbWludXRvcyIsIHBhZ2FtZW50bzogIlBpeCIgfSwNCiAgICAgIHsgbm9tZTogIkNhcmxhIEUuIiwgdGVtcG86ICIxNyBtaW51dG9zIiwgcGFnYW1lbnRvOiAiY2FydMOjbyBkZSBkw6liaXRvIiB9DQogICAgXTsNCiAg"></script> <style>:root {
-      --cor-de-destaque: #f00;
-    }
-
-    #views b,
-    #vagas b {
-      color: var(--cor-de-destaque);
-    }
-
-    #vagas {
-      display: none;
-    }
-
-    #views {
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.4;
-    }
-
-    #toast-compras {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 1000;
-      background-color: #FFF;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      border-radius: 5px;
-      box-shadow: 1px 1px 5px #00000036;
-      transform: translateY(calc(100% + 40px));
-      transition: all .3s ease;
-      opacity: 0;
-    }
-
-    #toast-compras.show {
-      transform: none;
-      opacity: 1;
-    }
-
-    #toast-compras * {
-      font-family: "Roboto", sans-serif;
-    }
-
-    #toast-compras svg {
-      width: 40px;
-      height: 40px;
-      fill: #11F849;
-      border: 3px solid #11F849;
-      padding: 5px;
-      border-radius: 100px;
-    }
-
-    #toast-compras .textos .linha-1 {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      margin: 0 0 5px;
-    }
-
-    #toast-compras .textos .linha-1 .nome {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 16px;
-      color: #1b1b1b;
-      margin: 0;
-    }
-
-    #toast-compras .textos .linha-1 .tempo {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 14px;
-      color: #7a7a7a;
-      margin: 0;
-    }
-
-    #toast-compras .textos .pagamento {
-      font-size: 16px;
-      line-height: 1;
-      color: #7a7a7a;
-      margin: 0;
-    }</style><div id="toast-compras" class=""> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96.01 447.98 319.97"> <path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"></path> </svg><div class="textos"><div class="linha-1"><p class="nome">Raquel Silveira</p><p class="tempo">há 22 minutos</p></div><p class="pagamento">comprou no cartão de crédito</p></div></div> <script defer src="data:text/javascript;base64,DQogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uICgpIHsNCiAgICAgIGNvbnN0IHZhZ2FzQ29udGFpbmVyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3ZhZ2FzJyk7DQogICAgICBjb25zdCB2YWdhc0VsZW1lbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjdmFnYXMgYicpOw0KICAgICAgY29uc3Qgdmlld3NFbGVtZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3ZpZXdzIGIucXRkJyk7DQogICAgICBjb25zdCBkYXRlRWxlbWVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyN2aWV3cyBiLmRhdGUnKTsNCiAgICAgIGNvbnN0IHRvYXN0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3RvYXN0LWNvbXByYXMnKTsNCiAgICAgIGNvbnN0IHRvYXN0Tm9tZSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyN0b2FzdC1jb21wcmFzIC5ub21lJyk7DQogICAgICBjb25zdCB0b2FzdFRlbXBvID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3RvYXN0LWNvbXByYXMgLnRlbXBvJyk7DQogICAgICBjb25zdCB0b2FzdFBhZ2FtZW50byA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyN0b2FzdC1jb21wcmFzIC5wYWdhbWVudG8nKTsNCg0KICAgICAgZnVuY3Rpb24gcmFuZG9tTnVtYmVyKG1pbiwgbWF4KSB7DQogICAgICAgIG1pbiA9IE1hdGguY2VpbChtaW4pOw0KICAgICAgICBtYXggPSBNYXRoLmZsb29yKG1heCk7DQogICAgICAgIHJldHVybiBNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiAobWF4IC0gbWluICsgMSkpICsgbWluOw0KICAgICAgfQ0KDQogICAgICBmdW5jdGlvbiBleGliaXJWYWdhcygpIHsNCiAgICAgICAgaWYgKHZhZ2FzQ29udGFpbmVyKSB7DQogICAgICAgICAgdmFnYXNDb250YWluZXIuc3R5bGUuZGlzcGxheSA9ICJibG9jayI7DQogICAgICAgIH0NCiAgICAgIH0NCg0KICAgICAgZnVuY3Rpb24gY29uZmlndXJhclZhZ2FzKCkgew0KICAgICAgICBpZiAoIXZhZ2FzRWxlbWVudCkgcmV0dXJuOw0KDQogICAgICAgIGV4aWJpclZhZ2FzKCk7DQoNCiAgICAgICAgY29uc3QgdmFnYXNJbnRlcnZhbCA9IHNldEludGVydmFsKCgpID0+IHsNCiAgICAgICAgICBjb25zdCB2YWdhcyA9IE51bWJlcih2YWdhc0VsZW1lbnQuaW5uZXJUZXh0KTsNCg0KICAgICAgICAgIGlmIChpc05hTih2YWdhcykpIHsNCiAgICAgICAgICAgIGNsZWFySW50ZXJ2YWwodmFnYXNJbnRlcnZhbCk7DQogICAgICAgICAgICByZXR1cm47DQogICAgICAgICAgfQ0KDQogICAgICAgICAgaWYgKHZhZ2FzID49IDEwMCkgew0KICAgICAgICAgICAgdmFnYXNFbGVtZW50LmlubmVyVGV4dCA9IHZhZ2FzIC0gcmFuZG9tTnVtYmVyKDMsIDgpOw0KICAgICAgICAgIH0gZWxzZSBpZiAodmFnYXMgPj0gMzApIHsNCiAgICAgICAgICAgIHZhZ2FzRWxlbWVudC5pbm5lclRleHQgPSB2YWdhcyAtIHJhbmRvbU51bWJlcigxLCAzKTsNCiAgICAgICAgICB9IGVsc2UgaWYgKHZhZ2FzID49IDQpIHsNCiAgICAgICAgICAgIHZhZ2FzRWxlbWVudC5pbm5lclRleHQgPSB2YWdhcyAtIDE7DQogICAgICAgICAgfSBlbHNlIHsNCiAgICAgICAgICAgIGNsZWFySW50ZXJ2YWwodmFnYXNJbnRlcnZhbCk7DQogICAgICAgICAgfQ0KICAgICAgICB9LCByYW5kb21OdW1iZXIoNCwgOCkgKiAxMDAwKTsNCiAgICAgIH0NCg0KICAgICAgZnVuY3Rpb24gY29uZmlndXJhclZpZXdzKCkgew0KICAgICAgICBpZiAoIXZpZXdzRWxlbWVudCkgcmV0dXJuOw0KDQogICAgICAgIHNldEludGVydmFsKCgpID0+IHsNCiAgICAgICAgICBjb25zdCB2aWV3cyA9IE51bWJlcih2aWV3c0VsZW1lbnQuaW5uZXJUZXh0KTsNCg0KICAgICAgICAgIGlmIChpc05hTih2aWV3cykpIHJldHVybjsNCg0KICAgICAgICAgIGlmICh2aWV3cyA8PSA1MDApIHsNCiAgICAgICAgICAgIHZpZXdzRWxlbWVudC5pbm5lclRleHQgPSB2aWV3cyArIHJhbmRvbU51bWJlcigzLCA4KTsNCiAgICAgICAgICB9IGVsc2UgaWYgKHZpZXdzID49IDIzMDApIHsNCiAgICAgICAgICAgIHZpZXdzRWxlbWVudC5pbm5lclRleHQgPSB2aWV3cyArIHJhbmRvbU51bWJlcigtNSwgNSk7DQogICAgICAgICAgfSBlbHNlIHsNCiAgICAgICAgICAgIHZpZXdzRWxlbWVudC5pbm5lclRleHQgPSB2aWV3cyArIHJhbmRvbU51bWJlcigtMywgMTIpOw0KICAgICAgICAgIH0NCiAgICAgICAgfSwgNTAwMCk7DQogICAgICB9DQoNCiAgICAgIGZ1bmN0aW9uIGNvbmZpZ3VyYXJUb2FzdCgpIHsNCiAgICAgICAgaWYgKCF0b2FzdE5vbWUgfHwgIXRvYXN0VGVtcG8gfHwgIXRvYXN0UGFnYW1lbnRvIHx8ICFjb21wcmFzLmxlbmd0aCkgcmV0dXJuOw0KDQogICAgICAgIHRvYXN0Tm9tZS5pbm5lclRleHQgPSBjb21wcmFzWzBdLm5vbWU7DQogICAgICAgIHRvYXN0VGVtcG8uaW5uZXJUZXh0ID0gYGjDoSAke2NvbXByYXNbMF0udGVtcG99YDsNCiAgICAgICAgdG9hc3RQYWdhbWVudG8uaW5uZXJUZXh0ID0gYGNvbXByb3Ugbm8gJHtjb21wcmFzWzBdLnBhZ2FtZW50b31gOw0KDQogICAgICAgIGNvbXByYXMucHVzaChjb21wcmFzLnNoaWZ0KCkpOw0KICAgICAgfQ0KDQogICAgICBmdW5jdGlvbiBtb3N0cmFyVG9hc3QoKSB7DQogICAgICAgIGlmICghdG9hc3QpIHJldHVybjsNCg0KICAgICAgICBjb25maWd1cmFyVG9hc3QoKTsNCiAgICAgICAgdG9hc3QuY2xhc3NMaXN0LmFkZCgnc2hvdycpOw0KDQogICAgICAgIHNldFRpbWVvdXQoKCkgPT4gew0KICAgICAgICAgIHRvYXN0LmNsYXNzTGlzdC5yZW1vdmUoJ3Nob3cnKTsNCg0KICAgICAgICAgIHNldFRpbWVvdXQoKCkgPT4gew0KICAgICAgICAgICAgbW9zdHJhclRvYXN0KCk7DQogICAgICAgICAgfSwgcmFuZG9tTnVtYmVyKDUsIDEwKSAqIDEwMDApOw0KICAgICAgICB9LCAyNTAwKTsNCiAgICAgIH0NCg0KICAgICAgZnVuY3Rpb24gaW5zZXJpckRhdGEoKSB7DQogICAgICAgIGlmICghZGF0ZUVsZW1lbnQpIHJldHVybjsNCiAgICAgICAgY29uc3QgZGF0YSA9IG5ldyBEYXRlKCkudG9Mb2NhbGVEYXRlU3RyaW5nKCk7DQogICAgICAgIGRhdGVFbGVtZW50LmlubmVyVGV4dCA9IGRhdGE7DQogICAgICB9DQoNCiAgICAgIGluc2VyaXJEYXRhKCk7DQogICAgICBjb25maWd1cmFyVmlld3MoKTsNCg0KICAgICAgaWYgKG1hbnRlclZhZ2FzVmlzaXZlaXMpIHsNCiAgICAgICAgZXhpYmlyVmFnYXMoKTsNCiAgICAgIH0NCg0KICAgICAgaWYgKHZhZ2FzRWxlbWVudCkgew0KICAgICAgICBzZXRUaW1lb3V0KCgpID0+IHsNCiAgICAgICAgICBjb25maWd1cmFyVmFnYXMoKTsNCiAgICAgICAgfSwgZGVsYXlFbVNlZ3VuZG9zVmFnYXMgKiAxMDAwKTsNCiAgICAgIH0NCg0KICAgICAgaWYgKHRvYXN0KSB7DQogICAgICAgIHNldFRpbWVvdXQoKCkgPT4gew0KICAgICAgICAgIG1vc3RyYXJUb2FzdCgpOw0KICAgICAgICB9LCBkZWxheUVtU2VndW5kb3NDb21wcmFzICogMTAwMCk7DQogICAgICB9DQogICAgfSk7DQogIA=="></script> </div></div></div></div></div><section class="elementor-section elementor-top-section elementor-element elementor-element-4e96bdc elementor-section-boxed elementor-section-height-default" style="background:#000000;padding:70px 20px;">
-<div style="max-width:900px;margin:0 auto;font-family:Montserrat,sans-serif;">
-
-  <h2 style="text-align:center;color:#ffffff;font-size:2.2rem;font-weight:800;margin-bottom:48px;line-height:1.2;">Para quem é essa planilha?</h2>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
-    <div style="background:#ffffff;border-radius:12px;padding:24px 28px;display:flex;align-items:flex-start;gap:16px;">
-      <span style="color:#22c55e;font-size:1.4rem;flex-shrink:0;margin-top:2px;">&#9989;</span>
-      <p style="margin:0;font-size:1rem;line-height:1.55;color:#111;">Donos de floricultura que precificam <strong>no chute</strong> e não sabem se estão lucrando de verdade</p>
-    </div>
-
-    <div style="background:#ffffff;border-radius:12px;padding:24px 28px;display:flex;align-items:flex-start;gap:16px;">
-      <span style="color:#22c55e;font-size:1.4rem;flex-shrink:0;margin-top:2px;">&#9989;</span>
-      <p style="margin:0;font-size:1rem;line-height:1.55;color:#111;">Floristas que <strong>vendem todo dia</strong> mas o caixa <strong>nunca sobra</strong> no fim do mês</p>
-    </div>
-
-    <div style="background:#ffffff;border-radius:12px;padding:24px 28px;display:flex;align-items:flex-start;gap:16px;">
-      <span style="color:#22c55e;font-size:1.4rem;flex-shrink:0;margin-top:2px;">&#9989;</span>
-      <p style="margin:0;font-size:1rem;line-height:1.55;color:#111;">Quem pega <strong>casamento e evento</strong> mas tem medo de fechar orçamento no prejuízo</p>
-    </div>
-
-    <div style="background:#ffffff;border-radius:12px;padding:24px 28px;display:flex;align-items:flex-start;gap:16px;">
-      <span style="color:#22c55e;font-size:1.4rem;flex-shrink:0;margin-top:2px;">&#9989;</span>
-      <p style="margin:0;font-size:1rem;line-height:1.55;color:#111;">Donos que querem <strong>subir o preço sem perder cliente</strong> e fazer a floricultura crescer de verdade</p>
-    </div>
-
-  </div>
-</div>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-5bba213 elementor-section-boxed elementor-section-height-default" data-id="5bba213" data-element_type="section" style="background-color:#000000;padding:60px 20px;">
-<div class="elementor-container elementor-column-gap-default" style="max-width:800px;margin:0 auto;text-align:center;">
-<img src="images/depoimentos.png" alt="Depoimentos" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
-</div>
-<section style="background:#ffffff;padding:60px 0;">
-<div style="max-width:720px;margin:0 auto;padding:0 24px;font-family:Montserrat,sans-serif;">
-
-  <h2 style="text-align:center;font-size:2rem;font-weight:800;color:#111;margin-bottom:32px;">Tudo que você leva hoje:</h2>
-
-  <div style="text-align:center;margin-bottom:40px;">
-    <img src="images/foto1.png" alt="Planilha da Floricultura" style="max-width:100%;height:auto;border-radius:8px;" />
-  </div>
-
-  <table style="width:100%;border-collapse:collapse;">
-    <tr style="border-bottom:1px solid #e5e5e5;">
-      <td style="padding:14px 8px;width:32px;"><span style="color:#22c55e;font-size:1.2rem;">&#9989;</span></td>
-      <td style="padding:14px 8px;font-size:1rem;"><strong>PLANILHA DE PRECIFICAÇÃO COMPLETA</strong></td>
-      <td style="padding:14px 8px;text-align:right;white-space:nowrap;"><s style="color:red;font-weight:700;">R&#36; 297,00</s></td>
-    </tr>
-    <tr style="border-bottom:1px solid #e5e5e5;">
-      <td style="padding:14px 8px;"><span style="color:#22c55e;font-size:1.2rem;">&#9989;</span></td>
-      <td style="padding:14px 8px;font-size:1rem;" colspan="2">Acesso vitalício — compre uma vez, use pra sempre</td>
-    </tr>
-    <tr style="border-bottom:1px solid #e5e5e5;">
-      <td style="padding:14px 8px;"><span style="color:#22c55e;font-size:1.2rem;">&#9989;</span></td>
-      <td style="padding:14px 8px;font-size:1rem;">AULA: <strong>Como preencher a planilha do zero</strong></td>
-      <td style="padding:14px 8px;text-align:right;white-space:nowrap;"><s style="color:red;font-weight:700;">R&#36; 97,00</s></td>
-    </tr>
-    <tr style="border-bottom:1px solid #e5e5e5;">
-      <td style="padding:14px 8px;"><span style="color:#22c55e;font-size:1.2rem;">&#9989;</span></td>
-      <td style="padding:14px 8px;font-size:1rem;"><strong>Suporte direto por WhatsApp</strong> durante 30 dias</td>
-      <td style="padding:14px 8px;text-align:right;white-space:nowrap;"><s style="color:red;font-weight:700;">R&#36; 197,00</s></td>
-    </tr>
-    <tr>
-      <td style="padding:14px 8px;"><span style="color:#22c55e;font-size:1.2rem;">&#9989;</span></td>
-      <td style="padding:14px 8px;font-size:1rem;" colspan="2"><strong>Garantia incondicional de 7 dias</strong> — risco zero</td>
-    </tr>
-  </table>
-
-  <div id="oferta" style="text-align:center;margin:32px 0 0;padding:20px 24px;background:linear-gradient(135deg,#ff4444,#cc0000);border-radius:12px;box-shadow:0 4px 20px rgba(255,68,68,0.4);">
-    <p style="color:#fff;font-size:0.85rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 8px;">⏰ Oferta por tempo limitado</p>
-    <p style="color:#fff;font-size:1.4rem;font-weight:900;margin:0 0 12px;letter-spacing:0.02em;">VÁLIDO SOMENTE AGORA</p>
-    <div style="display:flex;justify-content:center;gap:12px;align-items:center;">
-      <div style="background:rgba(0,0,0,0.3);border-radius:8px;padding:10px 16px;min-width:64px;">
-        <div id="timer-hours" style="color:#fff;font-size:2rem;font-weight:900;line-height:1;">00</div>
-        <div style="color:rgba(255,255,255,0.7);font-size:0.65rem;letter-spacing:0.1em;margin-top:2px;">HORAS</div>
-      </div>
-      <div style="color:#fff;font-size:1.8rem;font-weight:900;margin-bottom:18px;">:</div>
-      <div style="background:rgba(0,0,0,0.3);border-radius:8px;padding:10px 16px;min-width:64px;">
-        <div id="timer-minutes" style="color:#fff;font-size:2rem;font-weight:900;line-height:1;">15</div>
-        <div style="color:rgba(255,255,255,0.7);font-size:0.65rem;letter-spacing:0.1em;margin-top:2px;">MINUTOS</div>
-      </div>
-      <div style="color:#fff;font-size:1.8rem;font-weight:900;margin-bottom:18px;">:</div>
-      <div style="background:rgba(0,0,0,0.3);border-radius:8px;padding:10px 16px;min-width:64px;">
-        <div id="timer-seconds" style="color:#fff;font-size:2rem;font-weight:900;line-height:1;">00</div>
-        <div style="color:rgba(255,255,255,0.7);font-size:0.65rem;letter-spacing:0.1em;margin-top:2px;">SEGUNDOS</div>
-      </div>
-    </div>
-    <p style="color:rgba(255,255,255,0.85);font-size:0.8rem;margin:10px 0 0;">Depois desse tempo, o preço volta para R$ 137,00</p>
-  </div>
-  <script>
-  (function(){
-    var KEY = 'flori_timer_end';
-    var DURATION = 15 * 60; // 15 minutes in seconds
-    var endTime = sessionStorage.getItem(KEY);
-    if (!endTime) {
-      endTime = Date.now() + DURATION * 1000;
-      sessionStorage.setItem(KEY, endTime);
-    }
-    function update() {
-      var remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
-      var h = Math.floor(remaining / 3600);
-      var m = Math.floor((remaining % 3600) / 60);
-      var s = remaining % 60;
-      document.getElementById('timer-hours').textContent = String(h).padStart(2,'0');
-      document.getElementById('timer-minutes').textContent = String(m).padStart(2,'0');
-      document.getElementById('timer-seconds').textContent = String(s).padStart(2,'0');
-      if (remaining > 0) setTimeout(update, 1000);
-    }
-    document.addEventListener('DOMContentLoaded', update);
-  })();
-  </script>
-
-  <div style="text-align:center;margin-top:40px;padding:40px 28px;background:#111;border-radius:16px;">
-    <p style="color:#9ca3af;font-size:1rem;margin-bottom:4px;">De <s>R$ 976,00</s></p>
-    <p style="color:#22c55e;font-size:3rem;font-weight:900;line-height:1.1;margin-bottom:8px;">Por apenas R$ 49,90</p>
-    <p style="color:#9ca3af;font-size:0.9rem;margin-bottom:28px;">à vista (ou 5x de R$ 10,90 no cartão)</p>
-    <a href="https://pay.kiwify.com.br/M35Uf7r" target="_blank" style="display:block;background:#22c55e;color:#000;font-size:1.1rem;font-weight:900;letter-spacing:0.05em;text-transform:uppercase;padding:20px 32px;border-radius:8px;text-decoration:none;max-width:480px;margin:0 auto;">QUERO MINHA PLANILHA AGORA</a>
-    <p style="color:#6b7280;font-size:0.82rem;margin-top:14px;">🔒 Compra 100% segura &nbsp;•&nbsp; Acesso imediato no e-mail</p>
-    <p style="color:#6b7280;font-size:0.82rem;margin-top:6px;">Menos do que custa um buquê médio. Vai pagar ela mesma no primeiro arranjo que você precificar certo.</p>
-  </div>
-
-</div>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-855c4f8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="855c4f8" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0de9ae0" data-id="0de9ae0" data-element_type="column" data-e-type="column"><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-9112e72 elementor-widget elementor-widget-html" data-id="9112e72" data-element_type="widget" data-e-type="widget" data-widget_type="html.default"> <script defer src="data:text/javascript;base64,DQogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKCkgew0KICAgICAgICAvLyBPYnRlciBhIGRhdGEgYXR1YWwgbm8gZm9ybWF0byBERC9NTS9ZWQ0KICAgICAgICBjb25zdCBkYXRhQXR1YWwgPSBuZXcgRGF0ZSgpOw0KICAgICAgICBjb25zdCBkaWEgPSBTdHJpbmcoZGF0YUF0dWFsLmdldERhdGUoKSkucGFkU3RhcnQoMiwgJzAnKTsNCiAgICAgICAgY29uc3QgbWVzID0gU3RyaW5nKGRhdGFBdHVhbC5nZXRNb250aCgpICsgMSkucGFkU3RhcnQoMiwgJzAnKTsgLy8gTcOqcyBjb21lw6dhIGVtIDANCiAgICAgICAgY29uc3QgYW5vID0gU3RyaW5nKGRhdGFBdHVhbC5nZXRGdWxsWWVhcigpKS5zbGljZSgtMik7DQoNCiAgICAgICAgLy8gU3Vic3RpdHVpciBhIGRhdGEgbm8gdGV4dG8NCiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLmRhdGEtZGluYW1pY2EnKS5mb3JFYWNoKGVsZW1lbnQgPT4gew0KICAgICAgICAgICAgZWxlbWVudC50ZXh0Q29udGVudCA9IGAke2RpYX0vJHttZXN9LyR7YW5vfWA7DQogICAgICAgIH0pOw0KICAgIH0pOw0K"></script> </div><div class="elementor-element elementor-element-d73facb elementor-widget elementor-widget-heading" data-id="d73facb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default"><h2 class="elementor-heading-title elementor-size-default">Avisos legais</h2></div><div class="elementor-element elementor-element-e878da6 elementor-widget elementor-widget-text-editor" data-id="e878da6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default"><p>– Produto digital com fins <strong>informativos e de apoio à gestão</strong> destinado a donos e gestores de floricultura.<br /><br />– <strong>Não substitui</strong> o trabalho de contador, consultor financeiro ou contabilidade da sua empresa.<br /><br />– Os resultados apresentados em depoimentos são individuais e dependem da <strong>aplicação correta</strong> da planilha, do mercado local e da realidade de cada floricultura. <strong>Não há garantia de resultado financeiro específico.</strong><br /><br />– Os valores de referência (custo de flor, margens sugeridas) são <strong>médias de mercado</strong> e devem ser ajustados conforme seus fornecedores, região e estrutura de custo.<br /><br />– <strong>Não possui certificado</strong> de carga horária para fins profissionais.<br /><br />– <strong>Compra 100% segura.</strong> Pagamento processado por plataforma certificada. Acesso enviado por e-mail em até 5 minutos após a confirmação do pagamento.<br /><br />– <strong>Garantia de 7 dias.</strong> Se você não ficar satisfeito, devolvemos 100% do valor pago. Basta solicitar por e-mail dentro do prazo.<br /><br />– Mediante <strong>plágio, cópia, redistribuição ou revenda</strong> do conteúdo da planilha e materiais inclusos, <strong>medidas judiciais serão adotadas.</strong> Conteúdo protegido pela Lei de Direitos Autorais (Lei 9.610/98).</p><p style="margin-top:20px;"><a href="#" style="color:inherit;">Política de Privacidade</a> &nbsp;|&nbsp; <a href="#" style="color:inherit;">Termos de Uso</a></p></div></div></div></div><section class="elementor-section elementor-top-section elementor-element elementor-element-9492ab9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9492ab9" data-element_type="section" data-e-type="section"><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-847e6be" data-id="847e6be" data-element_type="column" data-e-type="column"><div class="elementor-widget-wrap"></div></div></div><</div> <script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfour/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <div data-elementor-type="popup" data-elementor-id="16180" class="elementor elementor-16180 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;1&quot;,&quot;sizes&quot;:[]},&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library"><section class="elementor-section elementor-top-section elementor-element elementor-element-d15beb4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d15beb4" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"><div class="elementor-container elementor-column-gap-default"><div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a76c5b9" data-id="a76c5b9" data-element_type="column" data-e-type="column"><div class="elementor-widget-wrap elementor-element-populated"><div class="elementor-element elementor-element-cf253c5 elementor-widget elementor-widget-heading" data-id="cf253c5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default"><h2 class="elementor-heading-title elementor-size-default">Preencha seus dados:</h2></div><div class="elementor-element elementor-element-136a1c1 elementor-button-align-center elementor-widget elementor-widget-form" data-id="136a1c1" data-element_type="widget" data-e-type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Pr\u00f3ximo&quot;,&quot;step_previous_label&quot;:&quot;Anterior&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default"><form class="elementor-form" method="post" name="Novo formulário" aria-label="Novo formulário"> <input type="hidden" name="post_id" value="16180"/> <input type="hidden" name="form_id" value="136a1c1"/> <input type="hidden" name="referer_title" value="Reta Final" /> <input type="hidden" name="queried_id" value="10419"/><div class="elementor-form-fields-wrapper elementor-labels-above"><div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required"> <input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite seu nome" required="required"></div><div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required"> <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite seu email" required="required"></div><div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_20c94dd elementor-col-100 elementor-field-required"> <input size="1" type="tel" name="form_fields[field_20c94dd]" id="form-field-field_20c94dd" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite seu DDD + WhatApp" required="required" pattern="[0-9()#&amp;+*-=.]+" title="Apenas números e caracteres de telefone (#, -, *, etc.) são aceitos."></div><div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons"> <button class="elementor-button elementor-size-sm elementor-animation-pulse" type="submit"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-text">ENTRAR NO GRUPO</span> </span> </button></div></div></form></div></div></div></div><</div> <script defer src="data:text/javascript;base64,CgkJCQljb25zdCBsYXp5bG9hZFJ1bk9ic2VydmVyID0gKCkgPT4gewoJCQkJCWNvbnN0IGxhenlsb2FkQmFja2dyb3VuZHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCBgLmUtY29uLmUtcGFyZW50Om5vdCguZS1sYXp5bG9hZGVkKWAgKTsKCQkJCQljb25zdCBsYXp5bG9hZEJhY2tncm91bmRPYnNlcnZlciA9IG5ldyBJbnRlcnNlY3Rpb25PYnNlcnZlciggKCBlbnRyaWVzICkgPT4gewoJCQkJCQllbnRyaWVzLmZvckVhY2goICggZW50cnkgKSA9PiB7CgkJCQkJCQlpZiAoIGVudHJ5LmlzSW50ZXJzZWN0aW5nICkgewoJCQkJCQkJCWxldCBsYXp5bG9hZEJhY2tncm91bmQgPSBlbnRyeS50YXJnZXQ7CgkJCQkJCQkJaWYoIGxhenlsb2FkQmFja2dyb3VuZCApIHsKCQkJCQkJCQkJbGF6eWxvYWRCYWNrZ3JvdW5kLmNsYXNzTGlzdC5hZGQoICdlLWxhenlsb2FkZWQnICk7CgkJCQkJCQkJfQoJCQkJCQkJCWxhenlsb2FkQmFja2dyb3VuZE9ic2VydmVyLnVub2JzZXJ2ZSggZW50cnkudGFyZ2V0ICk7CgkJCQkJCQl9CgkJCQkJCX0pOwoJCQkJCX0sIHsgcm9vdE1hcmdpbjogJzIwMHB4IDBweCAyMDBweCAwcHgnIH0gKTsKCQkJCQlsYXp5bG9hZEJhY2tncm91bmRzLmZvckVhY2goICggbGF6eWxvYWRCYWNrZ3JvdW5kICkgPT4gewoJCQkJCQlsYXp5bG9hZEJhY2tncm91bmRPYnNlcnZlci5vYnNlcnZlKCBsYXp5bG9hZEJhY2tncm91bmQgKTsKCQkJCQl9ICk7CgkJCQl9OwoJCQkJY29uc3QgZXZlbnRzID0gWwoJCQkJCSdET01Db250ZW50TG9hZGVkJywKCQkJCQknZWxlbWVudG9yL2xhenlsb2FkL29ic2VydmUnLAoJCQkJXTsKCQkJCWV2ZW50cy5mb3JFYWNoKCAoIGV2ZW50ICkgPT4gewoJCQkJCWRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIGV2ZW50LCBsYXp5bG9hZFJ1bk9ic2VydmVyICk7CgkJCQl9ICk7CgkJCQ=="></script>    <script defer id="elementor-frontend-js-before" src="data:text/javascript;base64,CnZhciBlbGVtZW50b3JGcm9udGVuZENvbmZpZyA9IHsiZW52aXJvbm1lbnRNb2RlIjp7ImVkaXQiOmZhbHNlLCJ3cFByZXZpZXciOmZhbHNlLCJpc1NjcmlwdERlYnVnIjpmYWxzZX0sImkxOG4iOnsic2hhcmVPbkZhY2Vib29rIjoiQ29tcGFydGlsaGFyIG5vIEZhY2Vib29rIiwic2hhcmVPblR3aXR0ZXIiOiJDb21wYXJ0aWxoYXIgbm8gVHdpdHRlciIsInBpbkl0IjoiRml4YXIiLCJkb3dubG9hZCI6IkJhaXhhciIsImRvd25sb2FkSW1hZ2UiOiJCYWl4YXIgaW1hZ2VtIiwiZnVsbHNjcmVlbiI6IlRlbGEgY2hlaWEiLCJ6b29tIjoiWm9vbSIsInNoYXJlIjoiQ29tcGFydGlsaGFyIiwicGxheVZpZGVvIjoiUmVwcm9kdXppciB2XHUwMGVkZGVvIiwicHJldmlvdXMiOiJBbnRlcmlvciIsIm5leHQiOiJQclx1MDBmM3hpbW8iLCJjbG9zZSI6IkZlY2hhciIsImExMXlDYXJvdXNlbFByZXZTbGlkZU1lc3NhZ2UiOiJTbGlkZSBhbnRlcmlvciIsImExMXlDYXJvdXNlbE5leHRTbGlkZU1lc3NhZ2UiOiJQclx1MDBmM3hpbW8gc2xpZGUiLCJhMTF5Q2Fyb3VzZWxGaXJzdFNsaWRlTWVzc2FnZSI6IkVzdGUgXHUwMGU5IG8gcHJpbWVpcm8gc2xpZGUiLCJhMTF5Q2Fyb3VzZWxMYXN0U2xpZGVNZXNzYWdlIjoiRXN0ZSBcdTAwZTkgbyBcdTAwZmFsdGltbyBzbGlkZSIsImExMXlDYXJvdXNlbFBhZ2luYXRpb25CdWxsZXRNZXNzYWdlIjoiSXIgcGFyYSBvIHNsaWRlIn0sImlzX3J0bCI6ZmFsc2UsImJyZWFrcG9pbnRzIjp7InhzIjowLCJzbSI6NDgwLCJtZCI6NzY4LCJsZyI6MTAyNSwieGwiOjE0NDAsInh4bCI6MTYwMH0sInJlc3BvbnNpdmUiOnsiYnJlYWtwb2ludHMiOnsibW9iaWxlIjp7ImxhYmVsIjoiRGlzcG9zaXRpdm9zIG1cdTAwZjN2ZWlzIG5vIG1vZG8gcmV0cmF0byIsInZhbHVlIjo3NjcsImRlZmF1bHRfdmFsdWUiOjc2NywiZGlyZWN0aW9uIjoibWF4IiwiaXNfZW5hYmxlZCI6dHJ1ZX0sIm1vYmlsZV9leHRyYSI6eyJsYWJlbCI6IkRpc3Bvc2l0aXZvcyBtXHUwMGYzdmVpcyBubyBtb2RvIHBhaXNhZ2VtIiwidmFsdWUiOjg4MCwiZGVmYXVsdF92YWx1ZSI6ODgwLCJkaXJlY3Rpb24iOiJtYXgiLCJpc19lbmFibGVkIjpmYWxzZX0sInRhYmxldCI6eyJsYWJlbCI6IlRhYmxldCBubyBtb2RvIHJldHJhdG8iLCJ2YWx1ZSI6MTAyNCwiZGVmYXVsdF92YWx1ZSI6MTAyNCwiZGlyZWN0aW9uIjoibWF4IiwiaXNfZW5hYmxlZCI6dHJ1ZX0sInRhYmxldF9leHRyYSI6eyJsYWJlbCI6IlRhYmxldCBubyBtb2RvIHBhaXNhZ2VtIiwidmFsdWUiOjEyMDAsImRlZmF1bHRfdmFsdWUiOjEyMDAsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOmZhbHNlfSwibGFwdG9wIjp7ImxhYmVsIjoiTm90ZWJvb2siLCJ2YWx1ZSI6MTM2NiwiZGVmYXVsdF92YWx1ZSI6MTM2NiwiZGlyZWN0aW9uIjoibWF4IiwiaXNfZW5hYmxlZCI6ZmFsc2V9LCJ3aWRlc2NyZWVuIjp7ImxhYmVsIjoiVGVsYSBhbXBsYSAod2lkZXNjcmVlbikiLCJ2YWx1ZSI6MjQwMCwiZGVmYXVsdF92YWx1ZSI6MjQwMCwiZGlyZWN0aW9uIjoibWluIiwiaXNfZW5hYmxlZCI6ZmFsc2V9fSwKImhhc0N1c3RvbUJyZWFrcG9pbnRzIjpmYWxzZX0sInZlcnNpb24iOiIzLjM1LjgiLCJpc19zdGF0aWMiOmZhbHNlLCJleHBlcmltZW50YWxGZWF0dXJlcyI6eyJhZGRpdGlvbmFsX2N1c3RvbV9icmVha3BvaW50cyI6dHJ1ZSwiZV9vcHRpbWl6ZWRfbWFya3VwIjp0cnVlLCJ0aGVtZV9idWlsZGVyX3YyIjp0cnVlLCJob21lX3NjcmVlbiI6dHJ1ZSwiZ2xvYmFsX2NsYXNzZXNfc2hvdWxkX2VuZm9yY2VfY2FwYWJpbGl0aWVzIjp0cnVlLCJlX3ZhcmlhYmxlcyI6dHJ1ZSwiY2xvdWQtbGlicmFyeSI6dHJ1ZSwiZV9vcHRfaW5fdjRfcGFnZSI6dHJ1ZSwiZV9jb21wb25lbnRzIjp0cnVlLCJlX2ludGVyYWN0aW9ucyI6dHJ1ZSwiZV9lZGl0b3Jfb25lIjp0cnVlLCJpbXBvcnQtZXhwb3J0LWN1c3RvbWl6YXRpb24iOnRydWUsImVfcHJvX3ZhcmlhYmxlcyI6dHJ1ZX0sInVybHMiOnsiYXNzZXRzIjoiaHR0cHM6XC9cL2VzY29sYWRvcGFydG8uY29tLmJyXC93cC1jb250ZW50XC9wbHVnaW5zXC9lbGVtZW50b3JcL2Fzc2V0c1wvIiwiYWpheHVybCI6Imh0dHBzOlwvXC9lc2NvbGFkb3BhcnRvLmNvbS5iclwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwidXBsb2FkVXJsIjoiaHR0cHM6XC9cL2VzY29sYWRvcGFydG8uY29tLmJyXC93cC1jb250ZW50XC91cGxvYWRzIn0sIm5vbmNlcyI6eyJmbG9hdGluZ0J1dHRvbnNDbGlja1RyYWNraW5nIjoiMDNkZTMyMDQxMSJ9LCJzd2lwZXJDbGFzcyI6InN3aXBlciIsInNldHRpbmdzIjp7InBhZ2UiOltdLCJlZGl0b3JQcmVmZXJlbmNlcyI6W119LCJraXQiOnsiYWN0aXZlX2JyZWFrcG9pbnRzIjpbInZpZXdwb3J0X21vYmlsZSIsInZpZXdwb3J0X3RhYmxldCJdLCJnbG9iYWxfaW1hZ2VfbGlnaHRib3giOiJ5ZXMiLCJsaWdodGJveF9lbmFibGVfY291bnRlciI6InllcyIsImxpZ2h0Ym94X2VuYWJsZV9mdWxsc2NyZWVuIjoieWVzIiwibGlnaHRib3hfZW5hYmxlX3pvb20iOiJ5ZXMiLCJsaWdodGJveF9lbmFibGVfc2hhcmUiOiJ5ZXMiLCJsaWdodGJveF90aXRsZV9zcmMiOiJ0aXRsZSIsImxpZ2h0Ym94X2Rlc2NyaXB0aW9uX3NyYyI6ImRlc2NyaXB0aW9uIn0sInBvc3QiOnsiaWQiOjE0NTM0LCJ0aXRsZSI6IkNVUlNPJTIwJUUyJTgwJTkzJTIwTGVpdGUlMjBGYXJ0byUyMCU3QyUyMEVzY29sYSUyMGRvJTIwUGFydG8lMjAlRTIlODAlOTMlMjBFc2NvbGElMjBkbyUyMFBhcnRvJTIwJTdDJTIwSiVDMyVBOXNzaWNhJTIwR3VpbGhlcm1lIiwiZXhjZXJwdCI6IiIsImZlYXR1cmVkSW1hZ2UiOmZhbHNlfX07Ci8vIyBzb3VyY2VVUkw9ZWxlbWVudG9yLWZyb250ZW5kLWpzLWJlZm9yZQo="></script>     <script defer id="wp-i18n-js-after" src="data:text/javascript;base64,CndwLmkxOG4uc2V0TG9jYWxlRGF0YSggeyAndGV4dCBkaXJlY3Rpb25cdTAwMDRsdHInOiBbICdsdHInIF0gfSApOwovLyMgc291cmNlVVJMPXdwLWkxOG4tanMtYWZ0ZXIK"></script> <script defer id="elementor-pro-frontend-js-before" src="data:text/javascript;base64,CnZhciBFbGVtZW50b3JQcm9Gcm9udGVuZENvbmZpZyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC9lc2NvbGFkb3BhcnRvLmNvbS5iclwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwibm9uY2UiOiJiMzI4NmFmNWZjIiwidXJscyI6eyJhc3NldHMiOiJodHRwczpcL1wvZXNjb2xhZG9wYXJ0by5jb20uYnJcL3dwLWNvbnRlbnRcL3BsdWdpbnNcL2VsZW1lbnRvci1wcm9cL2Fzc2V0c1wvIiwicmVzdCI6Imh0dHBzOlwvXC9lc2NvbGFkb3BhcnRvLmNvbS5iclwvd3AtanNvblwvIn0sInNldHRpbmdzIjp7ImxhenlfbG9hZF9iYWNrZ3JvdW5kX2ltYWdlcyI6dHJ1ZX0sInBvcHVwIjp7Imhhc1BvcFVwcyI6dHJ1ZX0sInNoYXJlQnV0dG9uc05ldHdvcmtzIjp7ImZhY2Vib29rIjp7InRpdGxlIjoiRmFjZWJvb2siLCJoYXNfY291bnRlciI6dHJ1ZX0sInR3aXR0ZXIiOnsidGl0bGUiOiJUd2l0dGVyIn0sImxpbmtlZGluIjp7InRpdGxlIjoiTGlua2VkSW4iLCJoYXNfY291bnRlciI6dHJ1ZX0sInBpbnRlcmVzdCI6eyJ0aXRsZSI6IlBpbnRlcmVzdCIsImhhc19jb3VudGVyIjp0cnVlfSwicmVkZGl0Ijp7InRpdGxlIjoiUmVkZGl0IiwiaGFzX2NvdW50ZXIiOnRydWV9LCJ2ayI6eyJ0aXRsZSI6IlZLIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJvZG5va2xhc3NuaWtpIjp7InRpdGxlIjoiT0siLCJoYXNfY291bnRlciI6dHJ1ZX0sInR1bWJsciI6eyJ0aXRsZSI6IlR1bWJsciJ9LCJkaWdnIjp7InRpdGxlIjoiRGlnZyJ9LCJza3lwZSI6eyJ0aXRsZSI6IlNreXBlIn0sInN0dW1ibGV1cG9uIjp7InRpdGxlIjoiU3R1bWJsZVVwb24iLCJoYXNfY291bnRlciI6dHJ1ZX0sIm1peCI6eyJ0aXRsZSI6Ik1peCJ9LCJ0ZWxlZ3JhbSI6eyJ0aXRsZSI6IlRlbGVncmFtIn0sInBvY2tldCI6eyJ0aXRsZSI6IlBvY2tldCIsImhhc19jb3VudGVyIjp0cnVlfSwieGluZyI6eyJ0aXRsZSI6IlhJTkciLCJoYXNfY291bnRlciI6dHJ1ZX0sIndoYXRzYXBwIjp7InRpdGxlIjoiV2hhdHNBcHAifSwiZW1haWwiOnsidGl0bGUiOiJFbWFpbCJ9LCJwcmludCI6eyJ0aXRsZSI6IlByaW50In0sIngtdHdpdHRlciI6eyJ0aXRsZSI6IlgifSwidGhyZWFkcyI6eyJ0aXRsZSI6IlRocmVhZHMifX0sCiJmYWNlYm9va19zZGsiOnsibGFuZyI6InB0X0JSIiwiYXBwX2lkIjoiIn0sImxvdHRpZSI6eyJkZWZhdWx0QW5pbWF0aW9uVXJsIjoiaHR0cHM6XC9cL2VzY29sYWRvcGFydG8uY29tLmJyXC93cC1jb250ZW50XC9wbHVnaW5zXC9lbGVtZW50b3ItcHJvXC9tb2R1bGVzXC9sb3R0aWVcL2Fzc2V0c1wvYW5pbWF0aW9uc1wvZGVmYXVsdC5qc29uIn19OwovLyMgc291cmNlVVJMPWVsZW1lbnRvci1wcm8tZnJvbnRlbmQtanMtYmVmb3JlCg=="></script>     </body></html>
+</style>
